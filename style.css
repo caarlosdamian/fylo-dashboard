@@ -1,0 +1,52 @@
+:root {
+    --family: 'Raleway', sans-serif;
+    --font-style: font-style: normal;
+    --font-size-14: .875rem;
+    --pale-blue: hsl(243, 100%, 93%);
+    --grayish-blue: hsl(229, 7%, 55%);
+    --dark-blue: hsl(228, 56%, 26%);
+    --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--very-dark-blue);
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+}
+
+
+.container {
+    box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+    background: var(--dark-blue);
+    padding: 40px;
+}
+
+.left-container {
+    border-radius: 10px 100px 10px 10px;
+    width: 350px;
+    height: 201px;
+}
+
+.right-container {
+    min-width: 540px;
+    height: 152px;
+    margin-top: 49px;
+
+}

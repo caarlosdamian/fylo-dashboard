@@ -12,9 +12,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway';
+    font-family: var(--family);
     font-style: normal;
-    
+
 }
 
 body {
@@ -76,7 +76,7 @@ main {
 .img-background {
     width: 48px;
     height: 48px;
-    background: #0C122C;
+    background: var(--very-dark-blue);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ main {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    color: #DBD9FF;
+    color: var(--pale-blue);
 
 }
 
@@ -124,16 +124,19 @@ main {
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
-    /* identical to box height */
-
-
-    color: #DBD9FF;
+    color: var(--pale-blue);
 
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
+    body {
+        background-image: url('./images/bg-desktop.png');
+        background-position: bottom;
+        background-size: 100vw;
+
+    }
 
     main {
         flex-direction: column;
